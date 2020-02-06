@@ -1,0 +1,50 @@
+-
+	const nav = [
+		{text:'Home', href:'index.html'},
+		{text:'Products', href:'products.html'},
+		{text:'Services', href:'services.html'},
+		{text:'Resources', href:'resources.html'},
+		{text:'About', href:'about.html'},
+		{text:'Contact us', href:'contact.html'}
+	]
+- const page = 'Home';
+header.page-header
+	.layout-position
+		.header-topline
+			.logo
+				a._link(href='index.html')
+					+picture('./img/Logo', 'png', 'SALT Group')
+			+nav(nav, page)
+			+burger('header__burger')
+		.header-slider-s
+			.slider.header-slider#header-slider
+				.slide__wrap
+					.slide
+						._text
+							h3._title Device Authentication
+							p._discr|SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. Discover the possibilities with SALT.
+							a.header-slider__link.link-btn(href='javascrip:void(0)') Get Started
+						._img
+							+picture('./img/slide-img', 'png', 'SALT Group')
+				.slide__wrap
+					.slide
+						._text
+							h3._title Device Authentication
+							p._discr|SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. Discover the possibilities with SALT.
+							a.header-slider__link.link-btn(href='javascrip:void(0)') Get Started
+						._img
+							+picture('./img/slide-img', 'png', 'SALT Group')
+				.slide__wrap
+					.slide
+						._text
+							h3._title Device Authentication
+							p._discr|SALT Group is a world leader in authentication and security. We have a range of services to improve user authentication. Discover the possibilities with SALT.
+							a.header-slider__link.link-btn(href='javascrip:void(0)') Get Started
+						._img
+							+picture('./img/slide-img', 'png', 'SALT Group')
+	.header__bottom-line
+		.layout-position
+			.find-more#find-more
+				span._title Find out more
+				a.link.find-more__link(href="#our-work")
+					+svg('img/sprite.svg#find-more', '64','74')

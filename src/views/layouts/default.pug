@@ -1,0 +1,18 @@
+include ../../blocks/components/menu/menu
+include ../../blocks/components/burger/burger
+include ../../blocks/components/picture/picture
+include ../../blocks/components/svg/svg
+include ../../blocks/components/link-btn/link-btn
+
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="en")
+	head
+		include ../includes/head
+	body
+		//- div(style='display:none')
+		//- 	object(type="image/svg+xml" data="img/sprite.svg")
+		block content	
+		include ../includes/scripts

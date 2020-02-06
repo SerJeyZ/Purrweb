@@ -1,0 +1,1 @@
+import "../../blocks/components/burger/burger.js";
